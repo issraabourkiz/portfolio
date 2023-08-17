@@ -106,7 +106,7 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color: hsl(14, 80%, 50%);
+  --first-color: hsl(263, 34%, 64%);
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%, 95%);
@@ -125,7 +125,7 @@ body.dark-theme {
 
 .dark-theme .section__title-1::after, 
 .dark-theme .section__title-2::after {
-  background-color: hsla(14, 70%, 50%, .2);
+  background-color: hsla(263, 62%, 71%, 0.881);
 }
 
 .dark-theme :is(.home__arrow, .home__line, .about__line) {
@@ -133,7 +133,7 @@ body.dark-theme {
 }
 
 .dark-theme .home__description b {
-  background: linear-gradient(90deg, hsla(14, 80%, 50%, .3), hsla(14, 80%, 50%, 0));
+  background: linear-gradient(90deg,hsla(263, 58%, 59%, 0.3),hsla(263, 58%, 59%, 0));
 }
 
 .dark-theme :is(.button__ghost, .services__icon i) {
@@ -1223,9 +1223,14 @@ body.dark-theme {
     background-color: var(--black-color);
     color: var(--white-color);
     padding: 1.1rem 1.5rem;
+    transition: background-color .4s;
+  }
+  .nav__link-button i {
+    padding-right: 1rem;
   }
   .nav__link-button:hover {
     color: var(--white-color);
+    background-color: var(--first-color);
   }
   .nav__link-button::after {
     background-color: transparent;
@@ -1239,7 +1244,7 @@ body.dark-theme {
   }
 
   .home__container {
-    grid-template-columns: repeat(2, 460px);
+    grid-template-columns: repeat(2, 500px);
     gap: 2rem 4rem;
     align-items: center;
     padding-block: 5.5rem;
