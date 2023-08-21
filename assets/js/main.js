@@ -141,3 +141,26 @@ const sr = ScrollReveal({
             .about__container .section__title-1, .about__info, 
             .contact__social, .contact__data`, {origin: 'left'})
  sr.reveal(`.services__card, .projects__card`, {interval: 100})
+
+
+
+ /*=============== CAROUSEL ===============
+
+
+const carousel = document.querySelector('.carousel');
+const slides = document.querySelectorAll('.slide');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+const offset = currentIndex * -100;
+carousel.style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+currentIndex = (currentIndex + 1) % slides.length;
+updateCarousel();
+}
+
+setInterval(nextSlide, 2000); */
+
